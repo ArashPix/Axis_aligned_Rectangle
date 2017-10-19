@@ -1,7 +1,7 @@
 #include "Axis_aligned_Rectangle.h"
 
 
-Axis_aligned_Rectangle::Axis_aligned_Rectangle(const Point2D point, const float _width, const float _height): width(_width),height(_height),bLeft(point)
+Axis_aligned_Rectangle::Axis_aligned_Rectangle(const Point2D& point, const float _width, const float _height): width(_width),height(_height),bLeft(point)
 {
 	float x = point.get_x();
 	float y = point.get_y();
@@ -53,15 +53,22 @@ bool Axis_aligned_Rectangle::isColliding(Axis_aligned_Rectangle& a)
 	{
 		return true;
 	}
-	else {
+	else 
+	{
 		return false;
 	}
 }
 
 bool Axis_aligned_Rectangle::isColliding(Point2D& p) const
 {
-	if (bLeft.get_x() <= p.get_x() && bRight.get_x() >= p.get_x() &&
-		bLeft.get_y() <= p.get_y() && tLeft.get_y() >= p.get_y())
+	float blx = this->bLeft.get_x();
+	float bly = this->bLeft.get_y();
+
+	float trx = this->bRight.get_x();
+	float triy = this->bLeft.get_y();
+
+	if (this->bLeft.get_x() <= p.get_x() && this->bRight.get_x() >= p.get_x() &&
+		this->bLeft.get_y() <= p.get_y() && this->tLeft.get_y() >= p.get_y())
 	{
 		return true;
 	}
