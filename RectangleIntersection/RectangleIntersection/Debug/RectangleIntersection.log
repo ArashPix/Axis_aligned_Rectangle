@@ -1,0 +1,6 @@
+﻿  Main.cpp
+c:\repo\axis_aligned_rectangle\rectangleintersection\rectangleintersection\main.cpp(11): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\repo\axis_aligned_rectangle\rectangleintersection\rectangleintersection\main.cpp(29): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\repo\axis_aligned_rectangle\rectangleintersection\rectangleintersection\main.cpp(30): warning C4305: 'argument': truncation from 'double' to 'float'
+  RectangleIntersection.vcxproj -> C:\Repo\Axis_aligned_Rectangle\RectangleIntersection\Debug\RectangleIntersection.exe
+  RectangleIntersection.vcxproj -> C:\Repo\Axis_aligned_Rectangle\RectangleIntersection\Debug\RectangleIntersection.pdb (Partial PDB)

@@ -25,4 +25,6 @@ private:
 	Point2D bRight;
 	Point2D tLeft;
 	Point2D tRight;
+
+
 };

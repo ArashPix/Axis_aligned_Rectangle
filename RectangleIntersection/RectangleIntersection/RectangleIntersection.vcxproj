@@ -111,10 +111,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Axis_aligned_Rectangle.h" />
+    <ClInclude Include="Edge2D.h" />
     <ClInclude Include="Point2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Axis_aligned_Rectangle.cpp" />
+    <ClCompile Include="Edge2D.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Point2D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
